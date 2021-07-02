@@ -1,6 +1,8 @@
 import React from 'react';
-import { PageHeader } from 'antd';
 
 export function Header() {
-  return <PageHeader title="Audio Messag.es" subTitle="Shareable audio messages without the hassle" />;
+  return <div className='header'>
+    <h1>Audio Messag.es</h1>
+    <h2>Shareable audio messages without the hassle</h2>
+  </div>;
 }

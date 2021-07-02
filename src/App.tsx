@@ -1,15 +1,16 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import { Header } from './components/header';
+import { Home } from './routes/home';
 
 export function App() {
   return <HashRouter>
     <Switch>
-      <Route exact path="/play">
+      <Route path="/play/:audioData">
         <Header />
       </Route>
       <Route>
-        <Header />
+        <Home />
       </Route>
     </Switch>
   </HashRouter>;
